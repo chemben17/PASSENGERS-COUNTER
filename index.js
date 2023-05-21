@@ -20,6 +20,12 @@ function save() {
     // countEl.textContent = 0
     // count = 0
     // let totalNu = count;
+    if (count == 0)
+    {
+        let combine = ` on your ${entry} trip, you have ${entered} people entered the bus from the pack, and ${left} left the bus before it got to the final terminal \n`
+    saveEl.textContent += combine;
+        return;
+    }
     let combine = ` on your ${entry} trip, you have ${entered} people entered the bus from the pack, and ${left} left the bus before it got to the final terminal \n`
     saveEl.textContent += combine;
     count = 0;
